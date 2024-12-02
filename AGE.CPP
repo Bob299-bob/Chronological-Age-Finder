@@ -1,21 +1,21 @@
-#include<stdio.h>
+#include<stdio.h>                                        //Header Files
 #include<conio.h>
 #include<graphics.h>
-void age();
+void age();                                            // function decleration
 void main()
 {
  clrscr();
- int gdriver=DETECT,gm;
- initgraph(&gdriver,&gm,"C://TC//BGI");
- setbkcolor(GREEN);
- settextstyle(7,0,5);
- outtextxy(5,10,"Chronological Age Finder ");
+ int gdriver=DETECT,gm; 					// to call driver
+ initgraph(&gdriver,&gm,"C://TC//BGI");                                                 //to show path
+ setbkcolor(GREEN);                                        //to set background colour
+ settextstyle(7,0,5);					                             //to set font style
+ outtextxy(5,10,"Chronological Age Finder ");				
  printf("\n\n\n\n\n\n");
- age();
+ age();								//function call
  printf("\n\nThankyou");
  getch();
 }
-void age()
+void age()						//function Definition
 {
  int n,b,y,r1,r2,r3,r4,r5,r6,r7;
  printf("Guess Any number:-\n");
